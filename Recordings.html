@@ -33,168 +33,206 @@
 </head>
 
 <body> 
- <!-- Navbar Start -->
- <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-        <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>Upskill Institute</h2>
-    </a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="courses.html" class="nav-item nav-link">Courses</a>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                <div class="dropdown-menu fade-down m-0">
-                    <a href="team.html" class="dropdown-item active">Our Team</a>
-                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    <a href="Recordings.html" class="dropdown-item">Recordings</a>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>Upskill Institute</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item active">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="Recordings.html" class="dropdown-item">Recordings</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Class Recordings</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Team</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-        </div>
-        <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
-    </div>
- </nav>
- <!-- Navbar End -->
-
- <!-- Header Start -->
- <div class="container-fluid bg-primary py-5 mb-5 page-header">
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 text-center">
-                <h1 class="display-3 text-white animated slideInDown">Class Recordings</h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">Team</li>
-                    </ol>
-                </nav>
-            </div>
         </div>
     </div>
- </div>
- <!-- Header End -->
+    <!-- Header End -->
 
 
-
- <div class="container-fluid bg-light text-dark footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
- <div class="container-fluid bg-light text-dark footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-9 col-md-6">
-                <h4 class="section-title bg-dark text-start text-primary  pe-4">Azure DevOps</h4>
+    <!-- Recording Details start -->
+                <h3 style="color:blueviolet;" >Demo sessions</h3>
                 <table>
+                    <tr> 
+                        <td> 
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/_oU01DgsYWE?si=YtxCxU9d0N1NYLhl" title="Introduction to Azure DevOps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ayj9g2MWkAM?si=mKVAn3gx5oEcFtRK" title="GIT commands, git push, git pull" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                        </td>
+                        <td>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/DKGW0h7Odzg?si=8JsQKP9JAdY6AmxG" title="Introduction to Terraform" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </td>
+                
+                    </tr>
 
-                <tr><td><a  href="https://youtu.be/ZgDcNsQRmbA" target="_blank" rel="noopener noreferrer" > Day 1 : Azure DevOps Introduction |</a></td></tr>
-                <tr><td><a  href="https://youtu.be/dTthoRPhnhk" target="_blank" rel="noopener noreferrer"> Day 2 : Azure DevOps |</a></td></tr>
-                <tr><td><a  href="https://youtu.be/q_qAhQDElK8" target="_blank" rel="noopener noreferrer"> Day 3 : Azure DevOps |</a> </td></tr>
-                <tr><td><a  href="https://youtu.be/j3znGNc3H5Q" target="_blank" rel="noopener noreferrer"> Day 4 : Azure DevOps |</a></td></tr>
-                <tr><td><a  href="https://youtu.be/BBlOhHzTz7g" target="_blank" rel="noopener noreferrer"> Day 5 : Azure DevOps |</a></td></tr>
-                <tr><td><a  href="https://youtu.be/x_uZExFfboQ" target="_blank" rel="noopener noreferrer"> Day 6 : Azure DevOps |</a></td></tr>
-                <tr><td><a  href="https://youtu.be/I35x4xTt7FI" target="_blank" rel="noopener noreferrer">Day 7 : Azure DevOps |</a></td></tr>
-                <tr><td><a  href="https://youtu.be/ZX2KGNpCZ8s" target="_blank" rel="noopener noreferrer">Day 8 : Azure DevOps |</a></td></tr>
-                <tr><td><a  href="https://youtu.be/KxX6PmKTDKg" target="_blank" rel="noopener noreferrer">Day 9: Azure DevOps |</a></td></tr>
-                <tr><td><a  href="https://youtu.be/8iS4ByWLiEU" target="_blank" rel="noopener noreferrer"> Day 10: Azure DevOps | Creating Service Connection using Service Principle Automatic and Manual</a></td></tr>
-                <tr><td><a  href="https://youtu.be/b_yoNQ1wntk" target="_blank" rel="noopener noreferrer"> Day 11: Azure DevOps | </a></td></tr>
-                <tr><td><a  href="https://youtu.be/aD-EDeCe180" target="_blank" rel="noopener noreferrer">  Day 12: Azure DevOps | Contains template</a></td></tr>
-                <tr><td><a  href="https://youtu.be/j498qy8Mjzg" target="_blank" rel="noopener noreferrer"> Day 13: Azure DevOps | Extends template </a></td></tr>
-                <tr><td><a  href="https://youtu.be/4YbPy3ZabCc" target="_blank" rel="noopener noreferrer"> Day 14: Azure DevOps | Parameters in templates </a></td></tr>
-                <tr><td><a  href="">  Day 15: Azure DevOps | Template Expression |Video is not available</a></td></tr>
-                <tr><td><a  href="https://youtu.be/AucCoia5EDQ" target="_blank" rel="noopener noreferrer">  Day 16: Azure DevOps | Self Hosted Agents part I</a></td></tr>
-                <tr><td><a  href="https://youtu.be/ouGJhbslMZE" target="_blank" rel="noopener noreferrer">  Day 17: Azure DevOps | Self Hosted Agents part II</a></td></tr>
-                <tr><td><a  href="https://youtu.be/NAM7QuUqT5A" target="_blank" rel="noopener noreferrer">  Day 18: Azure DevOps | Self Hosted Agent Configuration </a></td></tr>
-                <tr><td>  Day 19: Azure DevOps | Scheduled on 9th July </td></tr>
-            </table>
-            </div>
+                </table>
+
+                <br><br>
+                <h3 style="color:green;">Exclusive for paid members</h3>
+                <br>
+                <h4 style = "color:blue" >Azure DevOps</h4>
+                <table style="border: chartreuse; align-content: center;">
+
+                    <tr><td><a  href="https://youtu.be/ZgDcNsQRmbA" target="_blank" rel="noopener noreferrer" > Day 1 : Azure DevOps Introduction |</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/dTthoRPhnhk" target="_blank" rel="noopener noreferrer"> Day 2 : Azure DevOps |</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/q_qAhQDElK8" target="_blank" rel="noopener noreferrer"> Day 3 : Azure DevOps |</a> </td></tr>
+                    <tr><td><a  href="https://youtu.be/j3znGNc3H5Q" target="_blank" rel="noopener noreferrer"> Day 4 : Azure DevOps |</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/BBlOhHzTz7g" target="_blank" rel="noopener noreferrer"> Day 5 : Azure DevOps |</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/x_uZExFfboQ" target="_blank" rel="noopener noreferrer"> Day 6 : Azure DevOps |</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/I35x4xTt7FI" target="_blank" rel="noopener noreferrer">Day 7 : Azure DevOps |</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/ZX2KGNpCZ8s" target="_blank" rel="noopener noreferrer">Day 8 : Azure DevOps |</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/KxX6PmKTDKg" target="_blank" rel="noopener noreferrer">Day 9: Azure DevOps |</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/8iS4ByWLiEU" target="_blank" rel="noopener noreferrer"> Day 10: Azure DevOps | Creating Service Connection using Service Principle Automatic and Manual</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/b_yoNQ1wntk" target="_blank" rel="noopener noreferrer"> Day 11: Azure DevOps | </a></td></tr>
+                    <tr><td><a  href="https://youtu.be/aD-EDeCe180" target="_blank" rel="noopener noreferrer">  Day 12: Azure DevOps | Contains template</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/j498qy8Mjzg" target="_blank" rel="noopener noreferrer"> Day 13: Azure DevOps | Extends template </a></td></tr>
+                    <tr><td><a  href="https://youtu.be/4YbPy3ZabCc" target="_blank" rel="noopener noreferrer"> Day 14: Azure DevOps | Parameters in templates </a></td></tr>
+                    <tr><td><a  href="">  Day 15: Azure DevOps | Template Expression |Video is not available</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/AucCoia5EDQ" target="_blank" rel="noopener noreferrer">  Day 16: Azure DevOps | Self Hosted Agents part I</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/ouGJhbslMZE" target="_blank" rel="noopener noreferrer">  Day 17: Azure DevOps | Self Hosted Agents part II</a></td></tr>
+                    <tr><td><a  href="https://youtu.be/NAM7QuUqT5A" target="_blank" rel="noopener noreferrer">  Day 18: Azure DevOps | Self Hosted Agent Configuration </a></td></tr>
+                    <tr><td>  Day 19: Azure DevOps | Scheduled on 9th July </td></tr>
+                </table>
+    <!-- Recording details end-->   
 
 
-            
- <!-- Footer Start -->
- <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">Quick Link</h4>
-                <a class="btn btn-link" href="about.html">About Us</a>
-                <a class="btn btn-link" href="contact.html">Contact Us</a>
-                <a class="btn btn-link" href="">Privacy Policy</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
-                <a class="btn btn-link" href="">FAQs & Help</a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">Contact</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kirtane Baug, Kharadi Bypass Road, Mundhwa, Pune</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9765004040, +91 8767316261</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>enrolltoupskill@gmail.com</p>
-                <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">Gallery</h4>
-                <div class="row g-2 pt-2">
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kirtane Baug, Kharadi Bypass Road, Mundhwa, Pune</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9765004040, +91 8767316261</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>enrolltoupskill@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Subscribe to our News Letter.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">Newsletter</h4>
-                <p>Subscribe to our News Letter.</p>
-                <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Upskill Institute</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
+                        Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Upskill Institute</a>, All Right Reserved.
+    <!-- Footer End -->
 
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
-                    Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="footer-menu">
-                        <a href="index.html">Home</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FAQs</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- </div>
- <!-- Footer End -->
+ <!-- Back to Top -->
+ <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+ <!-- JavaScript Libraries -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="lib/wow/wow.min.js"></script>
+ <script src="lib/easing/easing.min.js"></script>
+ <script src="lib/waypoints/waypoints.min.js"></script>
+ <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+ <!-- Template Javascript -->
+ <script src="js/main.js"></script>
+
+
 </body>
 </html>
